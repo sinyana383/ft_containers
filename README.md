@@ -1,2 +1,2 @@
 ### ft_containers
-- Re-implementations of std:: stack, vector and map containers
+Re-implementations of std:: stack, vector and map containers
