@@ -14,6 +14,13 @@ namespace ft
 		typedef typename Container::value_type			value_type; // тип элемента в контейнере стака
 		typedef typename Container::size_type			size_type;	// тип переменной для size()
 		typedef Container								container_type;
+
+		template <class T1, class Container1> friend  bool operator== (const stack<T1,Container1>& lhs, const stack<T1,Container1>& rhs);
+		template <class T1, class Container1> friend  bool operator< (const stack<T1,Container1>& lhs, const stack<T1,Container1>& rhs);
+		template <class T1, class Container1> friend  bool operator!= (const stack<T1,Container1>& lhs, const stack<T1,Container1>& rhs);
+		template <class T1, class Container1> friend  bool operator> (const stack<T1,Container1>& lhs, const stack<T1,Container1>& rhs);
+		template <class T1, class Container1> friend  bool operator<= (const stack<T1,Container1>& lhs, const stack<T1,Container1>& rhs);
+		template <class T1, class Container1> friend  bool operator>= (const stack<T1,Container1>& lhs, const stack<T1,Container1>& rhs);
 	protected:
 		Container c;
 
